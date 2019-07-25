@@ -1,6 +1,6 @@
     <template id="my-button">
       <div class="my-button">
-          <input type="submit" class="button" value="Enviar" id="nuevo"> &nbsp;
+          <input type="submit" class="button" value="Siguiente" id="nuevo"> &nbsp;
       </div>
     </template>
 
@@ -20,12 +20,11 @@
     }
 
     .button{
-        background-color: #4CAF50;
+        background-color: #58dc8b;
   border: none;
-  color: white;
+  color:#333;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
@@ -33,5 +32,6 @@
   border-radius: 7px;
   width: 300px;
   height: 50px;
+  font-size: 20px;
     }
     </style>
