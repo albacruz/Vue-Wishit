@@ -1,26 +1,38 @@
 <template>
-  <div>
-    <div id="app">
-      <init-page> </init-page>
+  <div id="app">
+    <div class="grid-container">
+        <present-img></present-img>
+        <form-container>
+        </form-container>
     </div>
+  </div>
 </template>
 
 <script>
-  import Init from "./components/Init"
+  import Present from "./components/Present";
+  import FormContainer from "./components/FormContainer";
+  import HeaderLogo from "./components/HeaderLogo";
   export default {
     name:'app',
     components: {
-      'init-page':  Init
+      'present-img':  Present,
+      'form-container': FormContainer,
+      'header-logo': HeaderLogo,
     }
   }
 </script>
 <style>
-  :root {
-    text-align: center;
-  }
+  body {
+  display: grid;
+  justify-content: center;
+  margin: 100px auto;
+  background-image: url("./assets/img/giftly.png");
+}
 
-  h1 {
-    font-family: Montserrat, Impact, sans-serif;
-    font-size: 72px;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". .";
+}
 </style>
