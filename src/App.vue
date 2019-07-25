@@ -1,32 +1,35 @@
 <template>
   <div id="app">
-    <!-- <div class="grid-container"> -->
-        <!-- <present-img></present-img> -->
-        <form-container>
-        </form-container>
-    <!-- </div> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
   import Present from "./components/Present";
-  import FormContainer from "./components/FormContainer";
+  import RegistroContainer from "./components/RegistroContainer";
+  import LoginContainer from "./components/LoginContainer";
   import HeaderLogo from "./components/HeaderLogo";
   export default {
     name:'app',
     components: {
       'present-img':  Present,
-      'form-container': FormContainer,
+      'reg-container': RegistroContainer,
+      'log-container': LoginContainer,
       'header-logo': HeaderLogo,
     }
   }
 </script>
 <style>
-  body {
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');  body {
   display: grid;
   justify-content: center;
   margin: 100px auto;
   background-image: url("./assets/img/giftly.png");
+}
+
+h1 {
+  font-family: 'Dancing Script';
+  font-size: 3.5em;
 }
 
 /* .grid-container {

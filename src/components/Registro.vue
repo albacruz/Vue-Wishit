@@ -1,5 +1,5 @@
-<template id="formulario-reg">
-      <div class="formulario-reg">
+<template id="registro-form">
+      <div class="registro-form">
         <h1>Regístrate</h1>
         <div class="form">
           <form action="" method="post">
@@ -30,7 +30,13 @@
             <br>
             <my-button></my-button>
         </form>
-        
+        <div class="toLogin">
+          <p>¿Tienes una cuenta?
+            <router-link to="/login">
+              Inicia Sesión
+            </router-link>
+          </p>
+        </div>
         </div>
      </div>
 </template>
@@ -38,15 +44,15 @@
     <script>
         import MyButton from "./MyButton";
         export default {
-            name: "Formulario",
-            template: "#formulario-reg",
+            name: "Registro",
+            template: "#registro-form",
             components: {
                 'my-button': MyButton
             }
         }
     </script>
     <style>
-.formulario-reg {
+.registro-form {
   width: 400px;
   height: 500px;
   display: flex;
@@ -57,10 +63,10 @@
 }
 
 .form{
-  display: flex;
-  justify-content: center;
   width: 300px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
@@ -79,6 +85,13 @@
   width: 300px;
   height: 100px;
   display: flex;
+}
+
+.toLogin {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  
 }
    
 </style>

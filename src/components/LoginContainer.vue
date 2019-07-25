@@ -1,28 +1,30 @@
-<template id="form-container">
-     <div class="form-container">
+<template id="log-container">
+     <div class="log-container">
         <header-logo></header-logo>
-        <formulario-reg></formulario-reg>
+        <login-form></login-form>
+
+
     </div>
 </template>
 
 <script>
 import HeaderLogo from "./HeaderLogo";
-import Formulario from "./Formulario";
+import Login from "./Login";
 export default {
-    name: "FormContainer",
-    template: "#form-container",
+    name: "LoginContainer",
+    template: "#log-container",
     components: {
       'header-logo': HeaderLogo,
-      'formulario-reg': Formulario
+      'login-form': Login
     }
 
 }
 </script>
 
 <style>
-.form-container {
+.log-container {
   width: 500px;
-  height: 800px;
+  height: 700px;
   border: 1px solid #33333322;
   border-radius: 10px;
   display: flex;

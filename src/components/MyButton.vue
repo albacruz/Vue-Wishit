@@ -22,7 +22,7 @@
     .button{
         background-color: #58dc8b;
   border: none;
-  color: white;
+  color:#333;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
