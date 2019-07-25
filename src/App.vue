@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div class="grid-container">
-        <present-img></present-img>
+    <!-- <div class="grid-container"> -->
+        <!-- <present-img></present-img> -->
         <form-container>
         </form-container>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
@@ -29,10 +29,10 @@
   background-image: url("./assets/img/giftly.png");
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". .";
-}
+} */
 </style>

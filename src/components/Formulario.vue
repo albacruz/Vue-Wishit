@@ -30,6 +30,7 @@
             <br>
             <my-button></my-button>
         </form>
+        
         </div>
      </div>
 </template>
@@ -51,6 +52,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #333;
+  font-size: 17px;
 }
 
 .form{
@@ -64,6 +67,10 @@
   width: 300px;
   height: 20px;
   border-radius: 5px;
+  border: none;
+  background-color: #ffffffaa;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 .cookies {
